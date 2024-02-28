@@ -2,7 +2,7 @@ import React , {useState,useEffect} from "react";
 import MainLayout from '../layouts/MainLayout';
 import { NavLink } from "react-router-dom";
 import RoomService from "../services/RoomService";
-import logo from "../assets/react.svg";
+import logo from "./image/s1.jpg";
 
 const HomeContent = () => {
   const [rooms,setRooms]=useState([]);
@@ -42,7 +42,7 @@ const RoomCard = (props) => {
       <div className="col">
         <div className="card">
           <div className="card-body">
-            <img src={logo} alt="" />
+          <img src={logo} alt=""width="100" height="100"  />
             <div className="card-text">
               <h5>{props.menu.name}</h5>
               <p>
