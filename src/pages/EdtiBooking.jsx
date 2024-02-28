@@ -76,7 +76,22 @@ const EditBooking = () => {
               </div>
             </div>
             <div className="mb-3 row">
-            <label htmlFor="inputName" className="col-4 col-form-label">
+              <label htmlFor="room_number" className="col-4 col-form-label">
+                Room Number
+              </label>
+              <div className="col-8 text-center">
+                <input
+                  type="text"
+                  className="form-control"
+                  name="room_number"
+                  id="room_number"
+                  placeholder="Enter the room number you want to book"
+                  onChange={handleInputChange}
+                />
+              </div>
+            </div>
+            <div className="mb-3 row">
+              <label htmlFor="name" className="col-4 col-form-label">
                 Name
               </label>
               <div className="col-8">
@@ -85,15 +100,29 @@ const EditBooking = () => {
                   className="form-control"
                   name="name"
                   id="name"
-                  placeholder="Please enter the booker's name."
+                  placeholder="Enter the booker's name"
                   onChange={handleInputChange}
-                  value={booking.name}
                 />
               </div>
             </div>
             <div className="mb-3 row">
-            <label htmlFor="inputName" className="col-4 col-form-label">
-               Contract
+              <label htmlFor="email" className="col-4 col-form-label">
+                E-mail
+              </label>
+              <div className="col-8">
+                <input
+                  type="email"
+                  className="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Enter the booker's email"
+                  onChange={handleInputChange}
+                />
+              </div>
+            </div>
+            <div className="mb-3 row">
+              <label htmlFor="contract" className="col-4 col-form-label">
+                Contract
               </label>
               <div className="col-8">
                 <input
@@ -101,9 +130,50 @@ const EditBooking = () => {
                   className="form-control"
                   name="contract"
                   id="contract"
-                  placeholder="Please enter the contract you want to rent."
+                  placeholder="Enter the contract you want to rent"
                   onChange={handleInputChange}
-                  value={booking.contract}
+                />
+              </div>
+            </div>
+            <div className="mb-3 row">
+              <label htmlFor="date" className="col-4 col-form-label">
+                Date
+              </label>
+              <div className="col-8">
+                <input
+                  type="date"
+                  className="form-control"
+                  name="date"
+                  id="date"
+                  onChange={handleInputChange}
+                />
+              </div>
+            </div>
+            <div className="mb-3 row">
+              <label htmlFor="startTime" className="col-4 col-form-label">
+                Start Time
+              </label>
+              <div className="col-8">
+                <input
+                  type="time"
+                  className="form-control"
+                  name="startTime"
+                  id="startTime"
+                  onChange={handleInputChange}
+                />
+              </div>
+            </div>
+            <div className="mb-3 row">
+              <label htmlFor="endTime" className="col-4 col-form-label">
+                End Time
+              </label>
+              <div className="col-8">
+                <input
+                  type="time"
+                  className="form-control"
+                  name="endTime"
+                  id="endTime"
+                  onChange={handleInputChange}
                 />
               </div>
             </div>
