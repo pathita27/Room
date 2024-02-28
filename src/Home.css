@@ -1,0 +1,41 @@
+.home-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .home-header h1 {
+    margin: 0;
+  }
+  
+  .home-header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .home-header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .home-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .search {
+    margin-bottom: 30px;
+  }
+  
+  .booking-calendar,
+  .notifications {
+    margin-bottom: 50px;
+  }
+  
+  .home-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }  
